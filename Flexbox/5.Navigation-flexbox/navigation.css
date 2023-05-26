@@ -1,0 +1,23 @@
+.header {
+    border-bottom: 2px solid rgb(0,0,0);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.header h1{
+    text-transform: uppercase;
+}
+.navigation-links {
+    display: flex;
+    gap: 6px;
+    
+}
+.navigation{
+    margin-left: auto;
+}
+
+.navigation-links .links a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+    
+}
