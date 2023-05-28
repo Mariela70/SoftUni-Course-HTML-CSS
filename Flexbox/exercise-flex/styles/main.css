@@ -104,12 +104,12 @@ background-color: #0059f7;
   max-width: 900px;
   margin: 0 auto 48px auto;
 }
-#how .row:last-child{
-  margin-bottom: 0;
-}
 #how .row:nth-child(even){
   flex-direction: row-reverse;
 }
+#how .row:not(:last-child){
+  margin-bottom: 48px;
+ }
 #how .row .row-img{
   width: 60%;
 }
@@ -119,4 +119,52 @@ background-color: #0059f7;
 }
 #how .row .desc{
   font-size: 14px;
+}
+
+@media screen and (max-width: 767px){
+  #hero .welcome{
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+  #hero .welcome .title {
+    width: 100%;
+  }
+  #hero .welcome > div {
+    width: 60%;
+  }
+  /* How section */
+  #how .row{
+    gap: 18px;
+  }
+  #how .row:not(:last-child){
+   margin-bottom: 36px;
+  }
+  #how .row .row-img{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:600px) {
+ /* Header */
+ .header .navigation{
+  display: none;
+}
+.header .btn{
+  margin-left: auto;
+}
+/* Hero */
+  #hero .welcome > div {
+    width: 80%;
+  }
+  #how .row{
+    flex-direction: column;
+    text-align: center;
+  }
+  #how .row:nth-child(even){
+    flex-direction: column;
+  }
+  #how .row .row-img{
+    width: 80%;
+  }
 }
