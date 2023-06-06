@@ -5,6 +5,7 @@ grey-#2222222
 /* Global */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #222222;
 }
 
 .btn {
@@ -13,6 +14,71 @@ body {
     border-radius: 4px;
     padding: 0.25rem 1rem;
     color: white;
+}
+/* FAQ */
+#FAQ{
+    background-color: black;
+    color: white;
+    margin-top: 0.25rem;
+    padding: 1rem;
+}
+#FAQ .section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+    margin-top: 0.25rem;
+    
+}
+#FAQ .title{
+   text-align: center;
+   font-size: 1.5rem;
+}
+#FAQ .section .question{
+background-color: #222222;
+padding: 1rem 1rem;
+margin-top: 1rem;
+}
+#FAQ .subtitle {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+#FAQ .form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#FAQ .form input {
+    border: 1px solid #222222;
+    padding: .75rem 1.25rem;
+    width: 100%;
+    border: 4px;
+}
+
+#FAQ .form .btn {
+    padding: .75rem 1.25rem;
+}
+/* Sections */
+.content-section {
+    background-color: black;
+    padding: 2rem 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 0.25rem;
+}
+
+.content-section .content {
+    margin-bottom: 1.25rem;
+}
+
+.content-section .title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 /* Header */
@@ -131,15 +197,63 @@ body {
     #hero .form input {
         border-radius: 0px;
     }
+    #FAQ .form {
+        flex-direction: row;
+        gap: 0;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    #FAQ .form .btn {
+        width: 180px;
+        flex-shrink: 0;
+    }
+
+    #FAQ .form input {
+        border-radius: 0px;
+    }
 
 }
 
 @media screen and (min-width:768px) {
-/* Tablet */
+
+    /* Tablet */
+    /* Sections */
+    .content-section {
+        padding: 4rem 3rem;
+        text-align: left;
+    }
+    .content-section .wrapper {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .content-section .content {
+        margin-bottom: 0;
+    }
+
+    .content-section:nth-of-type(odd) .content {
+        order: 2;
+    }
+    #FAQ .section{
+        max-width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /* Hero */
-    #hero .wrapper{
+    #hero .wrapper {
         max-width: 760px;
     }
+
     #hero .title {
         font-size: 2.5rem;
         margin-bottom: 2rem;
@@ -157,10 +271,12 @@ body {
     #hero .desc {
         font-size: 1.5rem;
     }
-    #hero .form{
+
+    #hero .form {
         max-width: 100%;
     }
 }
+
 @media screen and (min-width:1440px) {
 
     /* Hero */
@@ -181,4 +297,10 @@ body {
     #hero .desc {
         font-size: 2rem;
     }
+    #FAQ .subtitle{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+   
 }
