@@ -1,0 +1,212 @@
+body {
+    font-family: Helvetica, sans-serif;
+    color: #3f3f3f;
+}
+
+/* NAVIGATION */
+.header {
+    position: sticky;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.header .logo .main {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 1;
+}
+
+.header .logo .divider {
+    width: 1px;
+    height: 50px;
+    background-color: #3f3f3f;
+    display: inline-block;
+}
+
+.header .logo .sub {
+    font-size: 21px;
+    line-height: 1;
+}
+
+.header .nav {
+    display: flex;
+    gap: 2px;
+}
+
+.header .nav .nav-item {
+    padding: 1rem 2rem;
+    background-color: #ececec;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav .nav-item.active {
+    background-color: #e24e2a;
+    color: #fff;
+}
+
+.header .nav .nav-item .nav-link {
+    text-decoration: none;
+    color: inherit;
+    letter-spacing: 1.1px;
+    line-height: 1;
+}
+
+/* HERO */
+#hero {
+    height: calc(100vh - 66px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero .img-container {
+    overflow: hidden;
+}
+
+#hero .img-container .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero .content {
+    padding: 4rem;
+    background-color: #e24e2a;
+}
+
+#hero .content .text {
+    width: 70%;
+    line-height: 1.5;
+    font-size: 19px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+/* sections */
+.section--full {
+    padding: 6rem 4rem;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.section-grid .grid-item {
+    text-align: center;
+}
+
+/* FEATURES */
+
+#features {
+    background-color: #383838;
+    color: #fff;
+}
+
+#features .grid-item .icon-container {
+    padding: 1.5rem;
+    background-color: #e24e2a;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+#features .grid-item .icon-container i {
+    font-size: 48px;
+}
+
+#features .grid-item .title {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#features .grid-item .divider {
+    height: 1px;
+    background-color: #5d5954;
+    margin-bottom: 1rem;
+}
+
+#features .grid-item .desc {
+    font-size: 20px;
+    color: #5d5954;
+
+}
+
+/* ADVANTAGES */
+#advantages {
+    background-color: #383838;
+    color: #fff;
+}
+
+#advantages .grid-item .desc {
+    font-size: 20px;
+    color: #5d5954;
+
+}
+
+#advantages .grid-item .title {
+    margin-bottom: 2rem;
+}
+
+/* Subscribe */
+#subscribe {
+    background-color: #fff;
+    text-align: center;
+}
+
+#subscribe .title {
+    font-size: 42px;
+}
+
+#subscribe .desc {
+    font-size: 22px;
+    color: #5d5954;
+    margin-bottom: 2rem;
+}
+
+#subscribe .btn {
+    border: none;
+    background-color: #1b9772;
+    color: #fff;
+    padding: 1rem 3.5rem;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1b9772;
+}
+.footer .resources {
+    margin-left: 50%;
+    transform: translate(-50%);
+    display: inline-flex;
+    justify-content: center;
+    gap: 2px;
+    background-color: #8ec2aa;
+}
+
+.footer .resources .resource {
+    background-color: #1b9772;
+    padding: 0 1rem;
+}
+
+.footer a {
+    color: #8ec2aa;
+    text-decoration: none;
+    font-size: 18px;
+}
