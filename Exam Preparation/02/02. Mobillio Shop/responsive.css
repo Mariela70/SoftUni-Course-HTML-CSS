@@ -10,9 +10,15 @@
     .home-right {
         display: none;
     }
+    .home-navbar1{
+        justify-content: left;
+    }
+    .navbar-logo-title{
+        margin: 0;
+        position: relative;
+    }
 
     .home-hero1 {
-        justify-content: center;
         flex-direction: column;
     }
 
@@ -33,7 +39,11 @@
 
     .category-card-image {
         width: 250px;
-        height: 400px;
+        height: 250px;
+    }
+    .home-image6 {
+        width: 100%;
+        height: auto;
     }
 
     .home-cards-container {
