@@ -1,0 +1,39 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+
+.viewport {
+    height: 100vh;
+    display: block;
+    position: relative;
+    
+}
+.first{
+    background-color: aquamarine;
+}
+
+ .first .card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.first .card i{
+    position: absolute;
+    bottom: 33%;
+    right: 37%;
+    color: white;
+} 
+.second{
+    background-color: lightcoral;
+}
+.second .card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.second .card i{
+    position: absolute;
+    right: 37%;
+    bottom: 11%;
+    color: white;
+} 
