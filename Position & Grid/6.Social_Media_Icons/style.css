@@ -1,0 +1,26 @@
+.icons{
+    list-style-type: none;
+    display: inline-block;
+}
+.icons a{
+   border-radius: 50%;
+   background-color: lightgray;
+   color: black;
+   padding: 10px;
+   margin: 5px;
+}
+.icons a:hover:nth-child(1){
+    color: lightblue;
+}
+.icons a:hover:nth-child(2){
+    color: lightblue;
+}
+.icons a:hover:nth-child(3){
+    color: lightcoral;
+}
+.icons a:hover:nth-child(4){
+    color: lightblue;
+}
+.icons a:hover:nth-child(5){
+    color: lightblue;
+}
