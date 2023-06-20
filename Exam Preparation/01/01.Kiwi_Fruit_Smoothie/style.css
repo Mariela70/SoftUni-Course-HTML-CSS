@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+body{
+    font-family: 'PT Serif', serif;
+}
+.container{
+    padding: 20px;
+    width: 50%;
+    display: flex;
+    border: 1px solid black;
+}
+.container .recept{
+    padding: 0 20px;
+    width: 50%;
+    position: relative;
+}
+.recept img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transform: translate(-28px);
+}
+
+.recept span{
+    font-weight: bold;
+    color: hsl(120deg 100% 25.1%);
+}
+.recept .header{
+    text-align: center;
+    font-size: 22px;
+}
+.recept .nav{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.recept .nav h2{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+/* article img */
+.container .img{
+    width: 50%;
+    height: 50%;
+}
+.container .img .subimg{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
