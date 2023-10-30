@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIÈRA</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="order-form">
+            <div class="order">
+                <img src="/img/fiera.jpg" alt="Fiera">
+                <h2>FIÈRA Apple Stem Cell Cream</h2>
+            </div>
+            <form>
+                <label for="name">Email:</label>
+                <input type="text" id="email" name="email" required>
+                
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <button class="btn">Place Order</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            
+                <div class="container">
+                    <div class="thumbnail-carousel">
+                        <div class="thumbnail">
+                            <img src="/img/fiera.jpg" alt="Fiera 1" onclick="showImage(0)">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="/img/fiera2.jpg" alt="Fiera 2" onclick="showImage(1)">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="/img/fiera3.jpg" alt="Fiera 3" onclick="showImage(2)">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="/img/fiera4.jpg" alt="Fiera 4" onclick="showImage(3)">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="/img/fiera5.jpg" alt="Fiera 5" onclick="showImage(4)">
+                        </div>
+                    </div>
+                    <div class="main-carousel">
+                        <div class="carousel-slide">
+                            <img class="mainIMG" src="/img/fiera.jpg" alt="Fiera 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="mainIMG" src="/img/fiera2.jpg" alt="Fiera 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="mainIMG" src="/img/fiera3.jpg" alt="Fiera 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="mainIMG" src="/img/fiera4.jpg" alt="Fiera 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img class="mainIMG" src="/img/fiera5.jpg" alt="Fiera 5" alt="Fiera 5">
+                        </div>
+                    </div>
+                </div>
+            <div class="right">
+                <h1>FIÈRA Apple Stem Cell Cream</h1>
+                <h2> Anti-Aging Face Cream for Women over 40</h2>
+                <ul>
+                    <li><i class="far fa-check-circle"></i>Effective 3-in-1 moisturizer designed for mature skin</li>
+                    <li><i class="far fa-check-circle"></i>Plant stem cells visibly correct signs of aging</li>
+                    <li><i class="far fa-check-circle"></i>Antioxidants fade the appearance of dark spots</li>
+                    <li><i class="far fa-check-circle"></i>Hyaluronic acid visibly reduces wrinkles and fine lines</li>
+                    <li><i class="far fa-check-circle"></i>Sea Buckthorn Oil helps to reduce redness & discoloration
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="Background-img">
+            <img src="/img/apple.jpg" alt="Background img"> -->
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="product-info">
+            <div class="desc">
+                <h2>Description</h2>
+                    <ul>
+                        <li>Specifically designed for the unique needs of 40+ skin</li>
+                        <li>Safe and effective for the eye area; visibly reduces crow`s feet in 6-8 weeks</li>
+                        <li>Sea Buckthorn Oil and Vitamin E improve the appearance of redness and discoloration</li>
+                        <li>Antioxidants protect skin against environmental damage that causes rapid aging</li>
+                        <li>Works as a twice-daily moisturizer and/or special treatment</li>
+                        <li>Fragrance-free, paraben-free, cruelty-free</li>
+                    </ul>
+            </div>
+            <div>
+                <img src="/img/desc.webp" alt="DESCRIPTION img">
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="ingredients">
+            <h2>Ingredients:</h2>
+            <div class="basic">
+                <div class="basic-ingredients">
+                    <img src="/img/macadamia.jpg" alt="Macadamia">
+                    <div class="wrapper">
+                        <h3 class="title">Macadamia</h3>
+                        <p class="info">Macadamia oil is a versatile and nutritious oil that offers both culinary and
+                            cosmetic benefits. Whether you're using it in the kitchen or as part of your skincare and
+                            haircare routine, it can be a valuable addition to your lifestyle.</p>
+                    </div>
+                </div>
+                <div class="basic-ingredients">
+                    <img src="/img/butter.webp" alt="Shea Butter">
+                    <div class="wrapper">
+                        <h3 class="title">Shea butter</h3>
+                        <p class="info">Shea butter is a versatile natural product that is commonly found in various
+                            skincare, haircare, and cosmetic products. It's valued for its moisturizing and nourishing
+                            properties and is often used to promote healthy skin and hair.</p>
+                    </div>
+                </div>
+                <div class="basic-ingredients">
+                    <img src="/img/lavandula.jpg" alt="lavandula">
+                    <div class="wrapper">
+                        <h3 class="title">Lavandula</h3>
+                        <p class="info">Lavender oil is a versatile and popular essential oil that has been used for
+                            centuries for its soothing and healing properties. It's widely available in various forms,
+                            including pure essential oil, as well as in products like lotions, candles, and soaps.</p>
+                    </div>
+                </div>
+            </div>
+            <button id="showIngredientsBtn">Show more Ingredients</button>
+
+            <div id="overlay">
+                <div id="ingredientDetails">
+                    <h2>Ingredients</h2>
+                    <p>Purified Water, Macadamia Ternifolia Seed Oil, Caprylic/Capric Triglyceride , Glycerin Butylene
+                        Glycol,
+                        Stearic Acid, Malus Domestica, Cetyl Alcohol, Glyceryl Stearate, Hyaluronic Acid, Butyrospermum
+                        Parkii
+                        (Shea
+                        Butter), Magnesium, Aluminum Silicate, Lavandula Angustifolia (Lavender Oil), Cupressus
+                        Sempervirens
+                        Oil,
+                        Sea Buckthron Oil, Polisorbate 20, Phenoxyethanol, Caprylyl Glycol, Potassium Sobate, Hexylene
+                        Glycol,
+                        Tocopherol Acetate (Vitamin E), Retinol, Palmitate (Vitamin A)</p>
+                    <button id="closeIngredientsBtn">Close</button>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <section class="usage">
+            <div>
+                <img src="/img//how-to-use.webp" alt="Usage">
+            </div>
+            <div class="accordion">
+                <h2>How to use:</h2>
+                <button>Step 1:</button>
+                <div class="content">
+                    <p>Cleanse face and apply ony serums.</p>
+                </div>
+
+                <button>Step 2:</button>
+                <div class="content">
+                    <p>Gently apply a pearl-sized amount onto the face, neck, and other problem areas in an
+                        upward-stroking
+                        motion.</p>
+                </div>
+
+                <button>Step 3:</button>
+                <div class="content">
+                    <p>Apply you SPF and makeup as usual.</p>
+                </div>
+                <button>Step 4:</button>
+                <div class="content">
+                    <p>Enjoy ageless beauty and all the "you look so good!" compliments.</p>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+    </main>
+    <footer>
+        <p>FIÈRA</p>
+    </footer>
+</body>
+
+</html>
