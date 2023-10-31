@@ -1,0 +1,115 @@
+@media(max-width:1024px) {
+    .order-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-form input[type="number"] {
+       padding-top: 2px;
+    }
+    .order-form label {
+        padding-right: 2px;
+    }
+   
+
+    .hero {
+        height: 1000px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+    }
+    .divider{
+        width: 75%;
+    }
+
+    .product-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ingredients {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .ingredients .basic {
+        display: flex;
+        flex-direction: column;
+    }
+    .usage img{
+        width: 600px;
+    }
+}
+
+@media(max-width:768px) {
+    .order-form label {
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .order-form input[type="text"] {
+        font-size: 20px;
+    }
+    .order-form input[type="number"] {
+        padding-top: 1px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .thumbnail-carousel {
+        flex-direction: row;
+    }
+
+    .hero .right {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divider {
+        width: 70%;
+    }
+
+    .product-info .desc {
+        font-size: 18px;
+        padding-left: 5px;
+    }
+
+    .usage {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:600px) {
+    .order-form label {
+        padding-left: 2px;
+        font-size: 18px;
+    }
+
+    .order-form input[type="text"] {
+        font-size: 15px;
+        margin-right: 1px;
+    }
+    .divider{
+        width: 50%;
+    }
+    .product-info img {
+        width: 300px;
+    }
+    .usage img{
+        width: 500px;
+    }
+    .wrapper {
+        width: 70%;
+        text-align: justify;
+    }
+}
