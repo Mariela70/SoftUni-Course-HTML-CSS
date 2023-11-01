@@ -113,3 +113,128 @@
         text-align: justify;
     }
 }
+@media(max-width:540px){
+    .order-form input[type="text"]{
+        font-size: 14px;
+    }
+    .order-form label{
+        font-size: 15px;
+    }
+    .mainIMG {
+        width: 250px;
+        height: 250px;
+    }
+    .hero{
+        padding-top: 75px;
+        height: 850px;
+    }
+    .hero .right{
+        font-size: 17px;
+    }
+    .hero .right h1{
+        font-size: 34px;
+    }
+   
+}
+
+@media(max-width:500px){
+    .order-form{
+        font-size: 14px;
+    }
+    .order-form input[type="text"]{
+        font-size: 12px;
+    }
+    .order-form label{
+        font-size: 14px;
+    }
+    .mainIMG {
+        width: 150px;
+        height: 150px;
+    }
+    .hero{
+        padding-top: 55px;
+        height: 750px;
+    }
+    .hero .right{
+        font-size: 15px;
+    }
+    .ingredients .basic-ingredients img{
+        width: 300px;
+        height: 300px;
+    }
+    .usage img{
+        width: 300px;
+    }
+    .accordion {
+        width: 300px;
+    }
+}
+/* Iphone 14 Pro Max */
+@media(max-width:430px){
+    .order-form{
+        font-size: 12px;
+    }
+    .order-form input[type="text"]{
+        font-size: 11px;
+    }
+    .order-form label{
+        font-size: 14px;
+    }
+    .hero{
+        padding-top: 75px;
+        height: 800px;
+    }
+    .mainIMG {
+        width: 150px;
+        height: 150px;
+    }
+    .hero .right{
+        font-size: 15px;
+    }
+    .hero .right h1{
+        font-size: 28px;
+    }
+    .ingredients .basic-ingredients img{
+        width: 300px;
+        height: 300px;
+    }
+    .usage img{
+        width: 300px;
+    }
+    .accordion {
+        width: 300px;
+    }
+}
+/* Iphone XR */
+@media(max-width:414px){
+    .order{
+        font-size: 11px;
+    }
+    .order img {
+        width: 35px;
+        height: 35px;
+    }
+    .order-form input[type="number"]{
+        font-size: 12px;
+        padding-left: 4px;
+    }
+    .order-form input[type="text"]{
+        font-size: 11px;
+        padding-left: 5px;
+    }
+    
+}
+/* Iphone SE */
+@media(max-width:375px){
+    .order-form label{
+        font-size: 14px;
+    }
+    .order-form input[type="number"]{
+        font-size: 11px;
+    }
+    .order-form input[type="text"]{
+        font-size: 11px;
+    }
+    
+    
+}
