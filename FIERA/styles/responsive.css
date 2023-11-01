@@ -94,10 +94,12 @@
         padding-left: 2px;
         font-size: 18px;
     }
-
     .order-form input[type="text"] {
         font-size: 15px;
         margin-right: 1px;
+    }
+    .order-form input[type="number"] {
+        font-size: 11px;
     }
     .divider{
         width: 50%;
@@ -116,6 +118,9 @@
 @media(max-width:540px){
     .order-form input[type="text"]{
         font-size: 14px;
+    }
+    .order-form input[type="number"]{
+        font-size: 12px;
     }
     .order-form label{
         font-size: 15px;
@@ -146,6 +151,11 @@
     }
     .order-form label{
         font-size: 14px;
+    }
+    .order-form .btn {
+        font-size: 15px;
+        padding: 10px 12px;
+    
     }
     .mainIMG {
         width: 150px;
@@ -179,6 +189,9 @@
     }
     .order-form label{
         font-size: 14px;
+    }
+    .order-form .btn {
+        font-size: 13px;
     }
     .hero{
         padding-top: 75px;
@@ -226,14 +239,17 @@
 }
 /* Iphone SE */
 @media(max-width:375px){
+    .order{
+        font-size: 10px;
+    }
     .order-form label{
         font-size: 14px;
     }
     .order-form input[type="number"]{
-        font-size: 11px;
+        font-size: 6px;
     }
     .order-form input[type="text"]{
-        font-size: 11px;
+        font-size: 9px;
     }
     
     
